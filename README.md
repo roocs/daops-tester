@@ -3,7 +3,7 @@
 
 [![Pypi](https://img.shields.io/pypi/v/daops_tester.svg)](https://pypi.python.org/pypi/daops_tester)
 
-[![Travis](https://img.shields.io/travis/YOUR GITHUB USER ID/daops_tester.svg)](https://travis-ci.org/YOUR GITHUB USER ID/daops_tester)
+[![Travis](https://img.shields.io/travis/roocs/daops.svg)](https://travis-ci.org/roocs/daops-tester)
 
 [![Documentation](https://readthedocs.org/projects/daops-tester/badge/?version=latest)](https://daops-tester.readthedocs.io/en/latest/?badge=latest)
 
