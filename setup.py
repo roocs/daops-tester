@@ -11,8 +11,6 @@ __copyright__ = "Copyright 2018 United Kingdom Research and Innovation"
 __license__ = "BSD - see LICENSE file in top-level package directory"
 
 
-from setuptools import setup, find_packages
-
 # One strategy for storing the overall version is to put it in the top-level
 # package's __init__ but Nb. __init__.py files are not needed to declare
 # packages in Python 3
@@ -75,18 +73,22 @@ setup(
             'daops_tester=daops_tester.cli:main',
         ],
     },
-    install_requires=requirements,
+    install_requires=[
+        requirements,
+        "roocs_utils @ git+https://github.com/roocs/roocs-utils.git",
+    ],
     long_description=_long_description,
     long_description_content_type='text/markdown',
 
     include_package_data=True,
     keywords='daops_tester',
     name='daops_tester',
-    packages=find_packages(include=['daops_tester']),
+    packages=find_packages(),
+    package_data={"daops_tester": ["etc/roocs.ini"]},
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/YOUR GITHUB USER ID/daops_tester',
+    url='https://github.com/roocs/daops-tester',
     version=_package_version,
     zip_safe=False,
 )
