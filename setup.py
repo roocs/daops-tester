@@ -90,6 +90,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/roocs/daops-tester',
-    version=_package_version,
+    version=__version__,
     zip_safe=False,
 )
